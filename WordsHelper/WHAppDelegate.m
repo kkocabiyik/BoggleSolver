@@ -20,6 +20,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    _solverViewController = [[WHSolverViewController alloc] init];
+    
+    self.window.rootViewController = _solverViewController;
     return YES;
 }
 

@@ -22,6 +22,14 @@
 		FB094E3F181D024C0094E132 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB094E23181D024B0094E132 /* CoreData.framework */; };
 		FB094E47181D024C0094E132 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB094E45181D024C0094E132 /* InfoPlist.strings */; };
 		FB094E49181D024C0094E132 /* WordsHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E48181D024C0094E132 /* WordsHelperTests.m */; };
+		FB094E5C181D02670094E132 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E54181D02670094E132 /* Board.m */; };
+		FB094E5D181D02670094E132 /* BoggleSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E56181D02670094E132 /* BoggleSolver.m */; };
+		FB094E5E181D02670094E132 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E58181D02670094E132 /* Dictionary.m */; };
+		FB094E5F181D02670094E132 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB094E59181D02670094E132 /* dictionary.txt */; };
+		FB094E60181D02670094E132 /* NDTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E5B181D02670094E132 /* NDTrie.m */; };
+		FB094E64181D03ED0094E132 /* WHSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB094E62181D03ED0094E132 /* WHSolverViewController.m */; };
+		FB094E69181D2A790094E132 /* WHSolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB094E68181D2A790094E132 /* WHSolverViewController.xib */; };
+		FB4F1D781988423300BE4F14 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4F1D771988423300BE4F14 /* UIColor+HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,20 @@
 		FB094E44181D024C0094E132 /* WordsHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordsHelperTests-Info.plist"; sourceTree = "<group>"; };
 		FB094E46181D024C0094E132 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB094E48181D024C0094E132 /* WordsHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsHelperTests.m; sourceTree = "<group>"; };
+		FB094E53181D02670094E132 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		FB094E54181D02670094E132 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		FB094E55181D02670094E132 /* BoggleSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoggleSolver.h; sourceTree = "<group>"; };
+		FB094E56181D02670094E132 /* BoggleSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoggleSolver.m; sourceTree = "<group>"; };
+		FB094E57181D02670094E132 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		FB094E58181D02670094E132 /* Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dictionary.m; sourceTree = "<group>"; };
+		FB094E59181D02670094E132 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		FB094E5A181D02670094E132 /* NDTrie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTrie.h; sourceTree = "<group>"; };
+		FB094E5B181D02670094E132 /* NDTrie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTrie.m; sourceTree = "<group>"; };
+		FB094E61181D03ED0094E132 /* WHSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHSolverViewController.h; sourceTree = "<group>"; };
+		FB094E62181D03ED0094E132 /* WHSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHSolverViewController.m; sourceTree = "<group>"; };
+		FB094E68181D2A790094E132 /* WHSolverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHSolverViewController.xib; sourceTree = "<group>"; };
+		FB4F1D761988423300BE4F14 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		FB4F1D771988423300BE4F14 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +137,16 @@
 		FB094E25181D024B0094E132 /* WordsHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FB094E6A181DB55D0094E132 /* Utilities */,
+				FB094E52181D02670094E132 /* Boggle */,
 				FB094E2E181D024B0094E132 /* WHAppDelegate.h */,
 				FB094E2F181D024B0094E132 /* WHAppDelegate.m */,
 				FB094E34181D024B0094E132 /* Images.xcassets */,
 				FB094E31181D024B0094E132 /* WordsHelper.xcdatamodeld */,
 				FB094E26181D024B0094E132 /* Supporting Files */,
+				FB094E61181D03ED0094E132 /* WHSolverViewController.h */,
+				FB094E62181D03ED0094E132 /* WHSolverViewController.m */,
+				FB094E68181D2A790094E132 /* WHSolverViewController.xib */,
 			);
 			path = WordsHelper;
 			sourceTree = "<group>";
@@ -151,6 +178,31 @@
 				FB094E45181D024C0094E132 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB094E52181D02670094E132 /* Boggle */ = {
+			isa = PBXGroup;
+			children = (
+				FB094E53181D02670094E132 /* Board.h */,
+				FB094E54181D02670094E132 /* Board.m */,
+				FB094E55181D02670094E132 /* BoggleSolver.h */,
+				FB094E56181D02670094E132 /* BoggleSolver.m */,
+				FB094E57181D02670094E132 /* Dictionary.h */,
+				FB094E58181D02670094E132 /* Dictionary.m */,
+				FB094E59181D02670094E132 /* dictionary.txt */,
+				FB094E5A181D02670094E132 /* NDTrie.h */,
+				FB094E5B181D02670094E132 /* NDTrie.m */,
+			);
+			path = Boggle;
+			sourceTree = "<group>";
+		};
+		FB094E6A181DB55D0094E132 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB4F1D761988423300BE4F14 /* UIColor+HexColor.h */,
+				FB4F1D771988423300BE4F14 /* UIColor+HexColor.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WH;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ovidos Creative";
 				TargetAttributes = {
 					FB094E39181D024C0094E132 = {
@@ -229,6 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB094E69181D2A790094E132 /* WHSolverViewController.xib in Resources */,
+				FB094E5F181D02670094E132 /* dictionary.txt in Resources */,
 				FB094E2A181D024B0094E132 /* InfoPlist.strings in Resources */,
 				FB094E35181D024B0094E132 /* Images.xcassets in Resources */,
 			);
@@ -251,6 +305,12 @@
 			files = (
 				FB094E2C181D024B0094E132 /* main.m in Sources */,
 				FB094E30181D024B0094E132 /* WHAppDelegate.m in Sources */,
+				FB094E60181D02670094E132 /* NDTrie.m in Sources */,
+				FB094E5D181D02670094E132 /* BoggleSolver.m in Sources */,
+				FB094E64181D03ED0094E132 /* WHSolverViewController.m in Sources */,
+				FB4F1D781988423300BE4F14 /* UIColor+HexColor.m in Sources */,
+				FB094E5E181D02670094E132 /* Dictionary.m in Sources */,
+				FB094E5C181D02670094E132 /* Board.m in Sources */,
 				FB094E33181D024B0094E132 /* WordsHelper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +357,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -337,7 +396,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -396,7 +454,6 @@
 		FB094E50181D024C0094E132 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordsHelper.app/WordsHelper";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -419,7 +476,6 @@
 		FB094E51181D024C0094E132 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordsHelper.app/WordsHelper";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -454,6 +510,7 @@
 				FB094E4E181D024C0094E132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB094E4F181D024C0094E132 /* Build configuration list for PBXNativeTarget "WordsHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +519,7 @@
 				FB094E51181D024C0094E132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
